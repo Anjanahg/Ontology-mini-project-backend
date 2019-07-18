@@ -1,0 +1,1716 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://localhost/owl/liquorOntology.owl"
+     xml:base="http://localhost/owl/liquorOntology.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:liquorOntology="http://localhost/owl/liquorOntology.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://localhost/owl/liquorOntology.owl">
+        <rdfs:comment xml:lang="en">This is an ontology about alchoholic beverages.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#hasBaseAlcohol -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/owl/liquorOntology.owl#hasBaseAlcohol"/>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#hasColor -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/owl/liquorOntology.owl#hasColor">
+        <owl:inverseOf rdf:resource="http://localhost/owl/liquorOntology.owl#isColorOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#hasDecoration -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/owl/liquorOntology.owl#hasDecoration">
+        <owl:inverseOf rdf:resource="http://localhost/owl/liquorOntology.owl#isDecorationOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#hasIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/owl/liquorOntology.owl#hasIngredient">
+        <owl:inverseOf rdf:resource="http://localhost/owl/liquorOntology.owl#isIngredientOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#hasOrigin -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/owl/liquorOntology.owl#hasOrigin"/>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#hasPrice -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/owl/liquorOntology.owl#hasPrice"/>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#hasSecondaryAlcohol -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/owl/liquorOntology.owl#hasSecondaryAlcohol"/>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#hasSmoothness -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/owl/liquorOntology.owl#hasSmoothness"/>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#hasSoftner -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/owl/liquorOntology.owl#hasSoftner"/>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#hasStraw -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/owl/liquorOntology.owl#hasStraw"/>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#hasStrawDecoration -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/owl/liquorOntology.owl#hasStrawDecoration"/>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#isColorOf -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/owl/liquorOntology.owl#isColorOf"/>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#isDecorationOf -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/owl/liquorOntology.owl#isDecorationOf"/>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#isGlassFor -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/owl/liquorOntology.owl#isGlassFor">
+        <owl:inverseOf rdf:resource="http://localhost/owl/liquorOntology.owl#isServedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#isIngredientOf -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/owl/liquorOntology.owl#isIngredientOf"/>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#isServedIn -->
+
+    <owl:ObjectProperty rdf:about="http://localhost/owl/liquorOntology.owl#isServedIn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#hasAlcoholicDegree -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/owl/liquorOntology.owl#hasAlcoholicDegree"/>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://localhost/owl/liquorOntology.owl#hasName"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Absolute -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Absolute">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Vodka"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasAlcoholicDegree"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasName"/>
+                <owl:hasValue>Absolut</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Alcoholic_Beverage -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Alcoholic_Beverage">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Beverage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasAlcoholicDegree"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#America -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#America">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Asia -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Asia">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Baileys_Irish_Cream -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Baileys_Irish_Cream">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Liqueur"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasAlcoholicDegree"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasName"/>
+                <owl:hasValue>Baileys Irish Cream</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Beverage -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Beverage"/>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Bonita_Platinum -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Bonita_Platinum">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Tequila"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasAlcoholicDegree"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasName"/>
+                <owl:hasValue>Bonita platinum</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Budget_Price -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Budget_Price">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Price"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Casa_Dragones -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Casa_Dragones">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Tequila"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasAlcoholicDegree"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasName"/>
+                <owl:hasValue>Casa Dragones</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Cherry -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Cherry">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Fruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Coca_Cola -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Coca_Cola">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Soda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Cocktail -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Cocktail">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasBaseAlcohol"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/owl/liquorOntology.owl#Alcoholic_Beverage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasDecoration"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/owl/liquorOntology.owl#Decoration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasDecoration"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/owl/liquorOntology.owl#Fruit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasDecoration"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/owl/liquorOntology.owl#Vegetable"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasSecondaryAlcohol"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/owl/liquorOntology.owl#Alcoholic_Beverage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasSoftner"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/owl/liquorOntology.owl#Softner"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasStraw"/>
+                <owl:someValuesFrom rdf:resource="http://localhost/owl/liquorOntology.owl#Decoration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasIngredient"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://localhost/owl/liquorOntology.owl#Beverage"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasOrigin"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://localhost/owl/liquorOntology.owl#Country"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasPrice"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://localhost/owl/liquorOntology.owl#Price"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasSmoothness"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://localhost/owl/liquorOntology.owl#Smoothness"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#isServedIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://localhost/owl/liquorOntology.owl#Glass"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Cocktail_Glass -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Cocktail_Glass">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Glass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Cocktail_Umbrella -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Cocktail_Umbrella">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Decoration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Collins_Glass -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Collins_Glass">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Glass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Country -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Country"/>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Creame_De_cassis -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Creame_De_cassis">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Liqueur"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasAlcoholicDegree"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasName"/>
+                <owl:hasValue>Creame de casis</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Cucumber -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Cucumber">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Decoration -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Decoration"/>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Don_julio -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Don_julio">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Tequila"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasAlcoholicDegree"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasName"/>
+                <owl:hasValue>Don Julio</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Drinking_Straw -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Drinking_Straw">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Decoration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Europe -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Europe">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Country"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Expensive_Price -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Expensive_Price">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Price"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Feature -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Feature"/>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Fraise -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Fraise">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Fruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Fruit -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Fruit"/>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Gin -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Gin">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Alcoholic_Beverage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Gin_Cocktail -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Gin_Cocktail">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Cocktail"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasIngredient"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://localhost/owl/liquorOntology.owl#Gin"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Glass -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Glass"/>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Grenadine -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Grenadine">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Syrup"/>
+        <owl:disjointWith rdf:resource="http://localhost/owl/liquorOntology.owl#Mint"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#High_Smoothness -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#High_Smoothness">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Smoothness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Juice -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Juice">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Softner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Kahlua -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Kahlua">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Liqueur"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasAlcoholicDegree"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasName"/>
+                <owl:hasValue>kahlua</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Lemon -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Lemon">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Lemon_Juice -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Lemon_Juice">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Juice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Lemonade -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Lemonade">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Soda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Liqueur -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Liqueur">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Alcoholic_Beverage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Low_Smoothness -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Low_Smoothness">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Smoothness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Mint -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Mint">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Syrup"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Old_Fashioned_Glass -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Old_Fashioned_Glass">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Glass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Olive -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Olive">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Orange_Juice -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Orange_Juice">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Juice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Pineapple_Juice -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Pineapple_Juice">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Juice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Price -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Price">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Raspberry -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Raspberry">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Fruit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Saphire_Bombay -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Saphire_Bombay">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Gin"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasAlcoholicDegree"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">47</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasName"/>
+                <owl:hasValue>Saphire Bombay</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Sky -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Sky">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Vodka"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasAlcoholicDegree"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasName"/>
+                <owl:hasValue>Skyy</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Smoothness -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Smoothness">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Smrinoff -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Smrinoff">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Vodka"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasAlcoholicDegree"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasName"/>
+                <owl:hasValue>Smirnoff</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Soda -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Soda">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Softner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Softner -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Softner">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Beverage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Swizzle_Straw -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Swizzle_Straw">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Decoration"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Syrup -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Syrup">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Softner"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Tequila -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Tequila">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Alcoholic_Beverage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Tonic -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Tonic">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Soda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Vegetable -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Vegetable"/>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Vodka -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Vodka">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Alcoholic_Beverage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Vodka_Cocktail -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Vodka_Cocktail">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Cocktail"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasIngredient"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://localhost/owl/liquorOntology.owl#Vodka"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Whisky -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Whisky">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Alcoholic_Beverage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Whisky_Cocktail -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Whisky_Cocktail">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Cocktail"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasIngredient"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://localhost/owl/liquorOntology.owl#Whisky"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Gibson&apos;s -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Gibson&apos;s">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Gin"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasAlcoholicDegree"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#double">37.5</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasName"/>
+                <owl:hasValue>Gibson&apos;s</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Gordon&apos;s -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Gordon&apos;s">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Gin"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasAlcoholicDegree"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasName"/>
+                <owl:hasValue>Gordon&apos;s</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Jack_Daniel&apos;s -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Jack_Daniel&apos;s">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Whisky"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasAlcoholicDegree"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasName"/>
+                <owl:hasValue>Jack Daniels</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Jhonny_Walker&apos;s -->
+
+    <owl:Class rdf:about="http://localhost/owl/liquorOntology.owl#Jhonny_Walker&apos;s">
+        <rdfs:subClassOf rdf:resource="http://localhost/owl/liquorOntology.owl#Whisky"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasAlcoholicDegree"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://localhost/owl/liquorOntology.owl#hasName"/>
+                <owl:hasValue>Jhonny Walker</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Absolut_Lime -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Absolut_Lime">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Absolute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Absolut_Peach -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Absolut_Peach">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Absolute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Absolut_Raspberry -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Absolut_Raspberry">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Absolute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Absolut_Vodka -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Absolut_Vodka">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Absolute"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Alexander_CT -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Alexander_CT">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Gin_Cocktail"/>
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Whisky_Cocktail"/>
+        <liquorOntology:hasBaseAlcohol rdf:resource="http://localhost/owl/liquorOntology.owl#Gordon&apos;s_London_Dry_Gin"/>
+        <liquorOntology:hasDecoration rdf:resource="http://localhost/owl/liquorOntology.owl#Cucumber_Slice"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#JW_Black_Label"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Pineapple_Juice"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Gordon&apos;s_London_Dry_Gin"/>
+        <liquorOntology:hasOrigin rdf:resource="http://localhost/owl/liquorOntology.owl#Europe"/>
+        <liquorOntology:hasPrice rdf:resource="http://localhost/owl/liquorOntology.owl#Expensive"/>
+        <liquorOntology:hasSecondaryAlcohol rdf:resource="http://localhost/owl/liquorOntology.owl#JW_Black_Label"/>
+        <liquorOntology:hasSmoothness rdf:resource="http://localhost/owl/liquorOntology.owl#High_Smoothness"/>
+        <liquorOntology:hasSoftner rdf:resource="http://localhost/owl/liquorOntology.owl#Pineapple_Juice"/>
+        <liquorOntology:hasStraw rdf:resource="http://localhost/owl/liquorOntology.owl#Drinking_Straw"/>
+        <liquorOntology:isServedIn rdf:resource="http://localhost/owl/liquorOntology.owl#Collins_Glass"/>
+        <liquorOntology:hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;Alexander Cocktail&quot;</liquorOntology:hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#America -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#America">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#America"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Asia -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Asia">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Asia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Baileys_Irish_Liquerr -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Baileys_Irish_Liquerr">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Baileys_Irish_Cream"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Black_Supreme_CT -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Black_Supreme_CT">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Vodka_Cocktail"/>
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Whisky_Cocktail"/>
+        <liquorOntology:hasBaseAlcohol rdf:resource="http://localhost/owl/liquorOntology.owl#JW_Black_Label"/>
+        <liquorOntology:hasDecoration rdf:resource="http://localhost/owl/liquorOntology.owl#Cherry_Fruit"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#JW_Black_Label"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Orange_Juice"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Smirnoff_Gold"/>
+        <liquorOntology:hasOrigin rdf:resource="http://localhost/owl/liquorOntology.owl#Europe"/>
+        <liquorOntology:hasPrice rdf:resource="http://localhost/owl/liquorOntology.owl#Expensive"/>
+        <liquorOntology:hasSecondaryAlcohol rdf:resource="http://localhost/owl/liquorOntology.owl#Smirnoff_Gold"/>
+        <liquorOntology:hasSmoothness rdf:resource="http://localhost/owl/liquorOntology.owl#Low_Smoothness"/>
+        <liquorOntology:hasSoftner rdf:resource="http://localhost/owl/liquorOntology.owl#Orange_Juice"/>
+        <liquorOntology:hasStraw rdf:resource="http://localhost/owl/liquorOntology.owl#Swizzle_Straw"/>
+        <liquorOntology:isServedIn rdf:resource="http://localhost/owl/liquorOntology.owl#Collins_Glass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#BlueHawaii_CT -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#BlueHawaii_CT">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Vodka_Cocktail"/>
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Whisky_Cocktail"/>
+        <liquorOntology:hasBaseAlcohol rdf:resource="http://localhost/owl/liquorOntology.owl#JW_Blue_label"/>
+        <liquorOntology:hasDecoration rdf:resource="http://localhost/owl/liquorOntology.owl#Cherry_Fruit"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Grenadine_Syrup"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#JW_Blue_label"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Smirnoff_Blue"/>
+        <liquorOntology:hasOrigin rdf:resource="http://localhost/owl/liquorOntology.owl#America"/>
+        <liquorOntology:hasPrice rdf:resource="http://localhost/owl/liquorOntology.owl#Expensive"/>
+        <liquorOntology:hasSecondaryAlcohol rdf:resource="http://localhost/owl/liquorOntology.owl#Smirnoff_Blue"/>
+        <liquorOntology:hasSmoothness rdf:resource="http://localhost/owl/liquorOntology.owl#Low_Smoothness"/>
+        <liquorOntology:hasSoftner rdf:resource="http://localhost/owl/liquorOntology.owl#Grenadine_Syrup"/>
+        <liquorOntology:hasStraw rdf:resource="http://localhost/owl/liquorOntology.owl#Swizzle_Straw"/>
+        <liquorOntology:isServedIn rdf:resource="http://localhost/owl/liquorOntology.owl#Cocktail_Glass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Bombay_Saphire_Gin -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Bombay_Saphire_Gin">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Saphire_Bombay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Bonita_Platinum_Tequila -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Bonita_Platinum_Tequila">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Bonita_Platinum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#BrassMonkey_CT -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#BrassMonkey_CT">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Gin_Cocktail"/>
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Whisky_Cocktail"/>
+        <liquorOntology:hasBaseAlcohol rdf:resource="http://localhost/owl/liquorOntology.owl#Gibson&apos;s_Gin"/>
+        <liquorOntology:hasDecoration rdf:resource="http://localhost/owl/liquorOntology.owl#Olive_Slice"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Coca_Cola_Soda"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Jack_Daniels_Whisky"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Gibson&apos;s_Gin"/>
+        <liquorOntology:hasOrigin rdf:resource="http://localhost/owl/liquorOntology.owl#Europe"/>
+        <liquorOntology:hasPrice rdf:resource="http://localhost/owl/liquorOntology.owl#Budget"/>
+        <liquorOntology:hasSecondaryAlcohol rdf:resource="http://localhost/owl/liquorOntology.owl#Jack_Daniels_Whisky"/>
+        <liquorOntology:hasSmoothness rdf:resource="http://localhost/owl/liquorOntology.owl#High_Smoothness"/>
+        <liquorOntology:hasSoftner rdf:resource="http://localhost/owl/liquorOntology.owl#Coca_Cola_Soda"/>
+        <liquorOntology:hasStraw rdf:resource="http://localhost/owl/liquorOntology.owl#Cocktail_Umbrella"/>
+        <liquorOntology:isServedIn rdf:resource="http://localhost/owl/liquorOntology.owl#Collins_Glass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Budget -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Budget">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Budget_Price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Casa_Dragones_Tequila -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Casa_Dragones_Tequila">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Casa_Dragones"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Cherry_Fruit -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Cherry_Fruit">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Cherry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Coca_Cola_Soda -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Coca_Cola_Soda">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Coca_Cola"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Cocktail_Glass -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Cocktail_Glass">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Cocktail_Glass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Cocktail_Umbrella -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Cocktail_Umbrella">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Cocktail_Umbrella"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Collins_Glass -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Collins_Glass">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Collins_Glass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Creame_De_Casis_Liquerr -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Creame_De_Casis_Liquerr">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Creame_De_cassis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Cucumber_Slice -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Cucumber_Slice">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Cucumber"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Don_Julio_Tequila -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Don_Julio_Tequila">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Don_julio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Drinking_Straw -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Drinking_Straw">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Drinking_Straw"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Europe -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Europe">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Europe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Expensive -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Expensive">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Expensive_Price"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Fraise_Fruit -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Fraise_Fruit">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Fraise"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Grenadine_Syrup -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Grenadine_Syrup">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Grenadine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#GreyHounnd_CT -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#GreyHounnd_CT">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Gin_Cocktail"/>
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Vodka_Cocktail"/>
+        <liquorOntology:hasBaseAlcohol rdf:resource="http://localhost/owl/liquorOntology.owl#Bombay_Saphire_Gin"/>
+        <liquorOntology:hasDecoration rdf:resource="http://localhost/owl/liquorOntology.owl#Fraise_Fruit"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Absolut_Peach"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Bombay_Saphire_Gin"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Tonic_Soda"/>
+        <liquorOntology:hasOrigin rdf:resource="http://localhost/owl/liquorOntology.owl#Asia"/>
+        <liquorOntology:hasPrice rdf:resource="http://localhost/owl/liquorOntology.owl#Budget"/>
+        <liquorOntology:hasSecondaryAlcohol rdf:resource="http://localhost/owl/liquorOntology.owl#Absolut_Peach"/>
+        <liquorOntology:hasSmoothness rdf:resource="http://localhost/owl/liquorOntology.owl#Low_Smoothness"/>
+        <liquorOntology:hasSoftner rdf:resource="http://localhost/owl/liquorOntology.owl#Tonic_Soda"/>
+        <liquorOntology:hasStraw rdf:resource="http://localhost/owl/liquorOntology.owl#Drinking_Straw"/>
+        <liquorOntology:isServedIn rdf:resource="http://localhost/owl/liquorOntology.owl#Old_Fashioned_Glass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#High_Smoothness -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#High_Smoothness">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#High_Smoothness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#JW_Black_Label -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#JW_Black_Label">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Jhonny_Walker&apos;s"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#JW_Blue_label -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#JW_Blue_label">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Jhonny_Walker&apos;s"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#JW_Double_Black -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#JW_Double_Black">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Jhonny_Walker&apos;s"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#JW_Red_Label -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#JW_Red_Label">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Jhonny_Walker&apos;s"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Jack_Daniels_Whisky -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Jack_Daniels_Whisky">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Jack_Daniel&apos;s"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Khaula_Liquerr -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Khaula_Liquerr">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Kahlua"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Lemon_Juice -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Lemon_Juice">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Lemon_Juice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Lemon_Slice -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Lemon_Slice">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Lemon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Lemonade_Soda -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Lemonade_Soda">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Lemonade"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#LimeRicky_CT -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#LimeRicky_CT">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Gin_Cocktail"/>
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Whisky_Cocktail"/>
+        <liquorOntology:hasBaseAlcohol rdf:resource="http://localhost/owl/liquorOntology.owl#Bombay_Saphire_Gin"/>
+        <liquorOntology:hasDecoration rdf:resource="http://localhost/owl/liquorOntology.owl#Lemon_Slice"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Bombay_Saphire_Gin"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Jack_Daniels_Whisky"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Lemon_Juice"/>
+        <liquorOntology:hasOrigin rdf:resource="http://localhost/owl/liquorOntology.owl#Asia"/>
+        <liquorOntology:hasPrice rdf:resource="http://localhost/owl/liquorOntology.owl#Budget"/>
+        <liquorOntology:hasSecondaryAlcohol rdf:resource="http://localhost/owl/liquorOntology.owl#Jack_Daniels_Whisky"/>
+        <liquorOntology:hasSmoothness rdf:resource="http://localhost/owl/liquorOntology.owl#Low_Smoothness"/>
+        <liquorOntology:hasSoftner rdf:resource="http://localhost/owl/liquorOntology.owl#Lemon_Juice"/>
+        <liquorOntology:hasStraw rdf:resource="http://localhost/owl/liquorOntology.owl#Drinking_Straw"/>
+        <liquorOntology:isServedIn rdf:resource="http://localhost/owl/liquorOntology.owl#Collins_Glass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#LongIsland_CT -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#LongIsland_CT">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Gin_Cocktail"/>
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Vodka_Cocktail"/>
+        <liquorOntology:hasBaseAlcohol rdf:resource="http://localhost/owl/liquorOntology.owl#Sky_Vodka"/>
+        <liquorOntology:hasDecoration rdf:resource="http://localhost/owl/liquorOntology.owl#Lemon_Slice"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Coca_Cola_Soda"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Mint_Syrup"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Sky_Vodka"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Gordon&apos;s_Pink_Gin"/>
+        <liquorOntology:hasOrigin rdf:resource="http://localhost/owl/liquorOntology.owl#Asia"/>
+        <liquorOntology:hasPrice rdf:resource="http://localhost/owl/liquorOntology.owl#Budget"/>
+        <liquorOntology:hasSecondaryAlcohol rdf:resource="http://localhost/owl/liquorOntology.owl#Gordon&apos;s_Pink_Gin"/>
+        <liquorOntology:hasSmoothness rdf:resource="http://localhost/owl/liquorOntology.owl#Low_Smoothness"/>
+        <liquorOntology:hasSoftner rdf:resource="http://localhost/owl/liquorOntology.owl#Mint_Syrup"/>
+        <liquorOntology:hasStraw rdf:resource="http://localhost/owl/liquorOntology.owl#Cocktail_Umbrella"/>
+        <liquorOntology:isServedIn rdf:resource="http://localhost/owl/liquorOntology.owl#Cocktail_Glass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Low_Smoothness -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Low_Smoothness">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Low_Smoothness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Mint_Syrup -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Mint_Syrup">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Mint"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#MyFairLady_CT -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#MyFairLady_CT">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Gin_Cocktail"/>
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Vodka_Cocktail"/>
+        <liquorOntology:hasBaseAlcohol rdf:resource="http://localhost/owl/liquorOntology.owl#Absolut_Vodka"/>
+        <liquorOntology:hasDecoration rdf:resource="http://localhost/owl/liquorOntology.owl#Olive_Slice"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Absolut_Vodka"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Mint_Syrup"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Gordon&apos;s_Pink_Gin"/>
+        <liquorOntology:hasOrigin rdf:resource="http://localhost/owl/liquorOntology.owl#America"/>
+        <liquorOntology:hasPrice rdf:resource="http://localhost/owl/liquorOntology.owl#Expensive"/>
+        <liquorOntology:hasSecondaryAlcohol rdf:resource="http://localhost/owl/liquorOntology.owl#Gordon&apos;s_Pink_Gin"/>
+        <liquorOntology:hasSmoothness rdf:resource="http://localhost/owl/liquorOntology.owl#Low_Smoothness"/>
+        <liquorOntology:hasSoftner rdf:resource="http://localhost/owl/liquorOntology.owl#Mint_Syrup"/>
+        <liquorOntology:hasStraw rdf:resource="http://localhost/owl/liquorOntology.owl#Swizzle_Straw"/>
+        <liquorOntology:isServedIn rdf:resource="http://localhost/owl/liquorOntology.owl#Cocktail_Glass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Old_Fashioned_Glass -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Old_Fashioned_Glass">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Old_Fashioned_Glass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Olive_Slice -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Olive_Slice">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Olive"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Orange_Juice -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Orange_Juice">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Orange_Juice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Pineapple_Juice -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Pineapple_Juice">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Pineapple_Juice"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Raspberry_Fruit -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Raspberry_Fruit">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Raspberry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#SaltyDog_CT -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#SaltyDog_CT">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Gin_Cocktail"/>
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Vodka_Cocktail"/>
+        <liquorOntology:hasBaseAlcohol rdf:resource="http://localhost/owl/liquorOntology.owl#Smirnoff_Red"/>
+        <liquorOntology:hasDecoration rdf:resource="http://localhost/owl/liquorOntology.owl#Cucumber_Slice"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Mint_Syrup"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Smirnoff_Red"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Gordon&apos;s_Yellow_Gin"/>
+        <liquorOntology:hasOrigin rdf:resource="http://localhost/owl/liquorOntology.owl#Asia"/>
+        <liquorOntology:hasPrice rdf:resource="http://localhost/owl/liquorOntology.owl#Budget"/>
+        <liquorOntology:hasSecondaryAlcohol rdf:resource="http://localhost/owl/liquorOntology.owl#Gordon&apos;s_Yellow_Gin"/>
+        <liquorOntology:hasSmoothness rdf:resource="http://localhost/owl/liquorOntology.owl#Low_Smoothness"/>
+        <liquorOntology:hasSoftner rdf:resource="http://localhost/owl/liquorOntology.owl#Mint_Syrup"/>
+        <liquorOntology:hasStraw rdf:resource="http://localhost/owl/liquorOntology.owl#Drinking_Straw"/>
+        <liquorOntology:isServedIn rdf:resource="http://localhost/owl/liquorOntology.owl#Collins_Glass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Sky_Vodka -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Sky_Vodka">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Sky"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Smirnoff_Blue -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Smirnoff_Blue">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Smrinoff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Smirnoff_Gold -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Smirnoff_Gold">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Smrinoff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Smirnoff_Red -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Smirnoff_Red">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Smrinoff"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#SonicPower_CT -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#SonicPower_CT">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Vodka_Cocktail"/>
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Whisky_Cocktail"/>
+        <liquorOntology:hasBaseAlcohol rdf:resource="http://localhost/owl/liquorOntology.owl#JW_Red_Label"/>
+        <liquorOntology:hasDecoration rdf:resource="http://localhost/owl/liquorOntology.owl#Raspberry_Fruit"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#JW_Red_Label"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Lemonade_Soda"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Sky_Vodka"/>
+        <liquorOntology:hasOrigin rdf:resource="http://localhost/owl/liquorOntology.owl#Europe"/>
+        <liquorOntology:hasPrice rdf:resource="http://localhost/owl/liquorOntology.owl#Expensive"/>
+        <liquorOntology:hasSecondaryAlcohol rdf:resource="http://localhost/owl/liquorOntology.owl#Sky_Vodka"/>
+        <liquorOntology:hasSmoothness rdf:resource="http://localhost/owl/liquorOntology.owl#High_Smoothness"/>
+        <liquorOntology:hasSoftner rdf:resource="http://localhost/owl/liquorOntology.owl#Lemonade_Soda"/>
+        <liquorOntology:hasStraw rdf:resource="http://localhost/owl/liquorOntology.owl#Cocktail_Umbrella"/>
+        <liquorOntology:isServedIn rdf:resource="http://localhost/owl/liquorOntology.owl#Old_Fashioned_Glass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Swizzle_Straw -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Swizzle_Straw">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Swizzle_Straw"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Tonic_Soda -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Tonic_Soda">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Tonic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Gibson&apos;s_Gin -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Gibson&apos;s_Gin">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Gibson&apos;s"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Gordon&apos;s_London_Dry_Gin -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Gordon&apos;s_London_Dry_Gin">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Gordon&apos;s"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Gordon&apos;s_Pink_Gin -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Gordon&apos;s_Pink_Gin">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Gordon&apos;s"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Gordon&apos;s_Yellow_Gin -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Gordon&apos;s_Yellow_Gin">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Gordon&apos;s"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://localhost/owl/liquorOntology.owl#Tony&apos;s_Magic_CT -->
+
+    <owl:NamedIndividual rdf:about="http://localhost/owl/liquorOntology.owl#Tony&apos;s_Magic_CT">
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Vodka_Cocktail"/>
+        <rdf:type rdf:resource="http://localhost/owl/liquorOntology.owl#Whisky_Cocktail"/>
+        <liquorOntology:hasBaseAlcohol rdf:resource="http://localhost/owl/liquorOntology.owl#Jack_Daniels_Whisky"/>
+        <liquorOntology:hasDecoration rdf:resource="http://localhost/owl/liquorOntology.owl#Raspberry_Fruit"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Absolut_Lime"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Coca_Cola_Soda"/>
+        <liquorOntology:hasIngredient rdf:resource="http://localhost/owl/liquorOntology.owl#Jack_Daniels_Whisky"/>
+        <liquorOntology:hasOrigin rdf:resource="http://localhost/owl/liquorOntology.owl#America"/>
+        <liquorOntology:hasPrice rdf:resource="http://localhost/owl/liquorOntology.owl#Expensive"/>
+        <liquorOntology:hasSecondaryAlcohol rdf:resource="http://localhost/owl/liquorOntology.owl#Absolut_Lime"/>
+        <liquorOntology:hasSmoothness rdf:resource="http://localhost/owl/liquorOntology.owl#High_Smoothness"/>
+        <liquorOntology:hasSoftner rdf:resource="http://localhost/owl/liquorOntology.owl#Coca_Cola_Soda"/>
+        <liquorOntology:hasStraw rdf:resource="http://localhost/owl/liquorOntology.owl#Swizzle_Straw"/>
+        <liquorOntology:isServedIn rdf:resource="http://localhost/owl/liquorOntology.owl#Old_Fashioned_Glass"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#America"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Asia"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Europe"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Beverage"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Cocktail"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Country"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Decoration"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Feature"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Fruit"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Glass"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Vegetable"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Cherry"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Fraise"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Raspberry"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Coca_Cola"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Lemonade"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Tonic"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Cocktail_Glass"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Collins_Glass"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Old_Fashioned_Glass"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Cocktail_Umbrella"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Drinking_Straw"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Swizzle_Straw"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Cucumber"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Lemon"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Olive"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Gin"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Liqueur"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Tequila"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Vodka"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Whisky"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Lemon_Juice"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Orange_Juice"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Pineapple_Juice"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Saphire_Bombay"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Gibson&apos;s"/>
+            <rdf:Description rdf:about="http://localhost/owl/liquorOntology.owl#Gordon&apos;s"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
